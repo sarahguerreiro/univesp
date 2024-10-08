@@ -1,0 +1,6 @@
+//Propósito: Este arquivo contém configurações específicas do projeto ou do espaço de trabalho. Pode incluir definições de compilador, padrões de codificação, e outras configurações relacionadas ao desenvolvimento no VSCode.
+//Implicações: Centraliza as configurações específicas para o seu projeto, garantindo que o ambiente de desenvolvimento seja consistente cada vez que o projeto for aberto.
+
+{
+    "C_Cpp.default.compilerPath": "C:\\msys64\\ucrt64\\bin\\gcc.exe"
+}

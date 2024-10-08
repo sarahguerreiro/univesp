@@ -1,0 +1,15 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+
+    // Propósito: Este arquivo define como o VSCode deve executar e depurar o código. Ele especifica as configurações de execução, como o nome do programa a ser executado, argumentos de linha de comando, ambiente, e se o depurador deve ser anexado ao processo.
+    //Implicações: Permite personalizar o comportamento da execução e depuração do seu programa C++. Por exemplo, você pode definir argumentos específicos ou ajustar como o depurador se comporta.
+
+    "version": "0.2.0",
+    "configurations": [
+        
+        
+
+    ]
+}

@@ -1,0 +1,118 @@
+/// REPRESENTAÇÃO DE DADOS, SISTEMAS DE NUMERAÇÃO E CONVERSÃO DE BASES_
+
+// REPRESENTAÇÃO DE DADOS_
+
+/ Dados:
+são os elementos conhecidos de um problema.
+Os dados sozinhos não tem significados, é preciso gerar algum tipo de processamento pra que esse dado tenha alguma informação.
+
+/ Informação:
+Um conjunto estruturado de dados.
+Possuem utilidade e podem gerar ações.
+
+/Conhecimento:
+Sintese de multiplas fontes de informação.
+Possui elevado significado e utilidade para o suporte a tomada de decisões. 
+
+
+// DADOS ANALÓGICOS E DIGITAIS_
+
+/ Dispositivos analógicos:
+Utilizam representação contínua, medindo quantitativamente fenomenos da natureza e grandezas analógicas
+ou contínuas, como temperatura, pressão, distancia, som.
+
+/ Dispositivos digitais:
+Representam e operam sobre dados discretos ou dígitos.(dados inseridos?)
+
+/ Bit - BInary DigiT:
+Representar dois estados possiveis 01010101010
+
+// Codificação Binária_
+
+Combinações de bits permitem armazenar um numero maior de estados.
+
+/Byte - BinarY TErm: Unidade básica de amazenamento em memória e disco usada pelos
+computadores e formada por 8 bits.
+
+/ Palavras:
+ Referem-se a um grupo de bits tratados como uma unidade unica pelo processador.
+O tamanho da palavra é uma característica importante da arquitetura do pc e afeta diretamente
+diversos aspectos do seu funcionamento. A relação entre o tamanho da palavra e a unidade de
+transferencia entre a cpu e a memoria principal é fundamental para entender como o processador
+interage com a memoria. 
+
+>>> POR EXEMPLO <<<<<
+DIgamos que temos um computador com uma arquitetura de 32 bits. Isso significa que o processador
+opera com palavras de 32 bits. Cada palavra de 32 bits pode representar um numero na faixa
+de 0 a 2^32-1(~4 milhões). Além disso, o tamanho da palavra tbm define a largura 
+do barramentode dados - que é a unidade  de transferencia entre a CPU e a memoria principal.
+
+Nesse exemplo de arquitetura de 32 bits, o barramento de arquitetura tbm terá 32 bits de
+largura. Isso significa que cada vez que a CPU preisar ler ou escrever dados na memória
+principal, ela pode transferir uma palavra de 32 bits de uma só vez. Se a CPU precisar
+acessar um dado que ocupa mais de 32 bits na memoria, ela pode precisar realizar varias 
+transferencias de dados.
+
+Por outro lado, se tivessemos uma arquitetura de 64bits, onde a palavra tem 64 bits
+de tamanho, o barramento de dados tbm seria de 64 bits de largura. Isso permitiria 
+transferencias de dados mais eficientes entre a CPU e a memoria principal, ja que 
+cada transferencia pooderia conter o dobro de dados em comparação com uma arquitetura
+de 32 bits.
+
+Portanto, a relação entre o tamanho da palavra e a unidade de transferencia entre a CPU
+e a memoria principal é que o tamanho da palavra determina a largura do barramento de d
+ados, influenciando assim na eficiencia das transferencias de dados e o desempenho geral
+do sistema. 
+
+
+// CODIFICAÇÃO BINÁRIA_TEXTO_
+
+/ Formatos:
+
+EBCDIC - Sequencia de 8 bits/cada caractere.
+ASCII - 7 bits/ cada caractere +1 bit de paridade para detecção de erros.
+UniCode - 16 Bits/ representar cada caractere.
+UTF-8 - 32 Bits / caractere.
+
+>>> POR EXEMPLO <<<<<
+- Como fica a representação do texto abaixo em codificação binária?
+
+                           Lalo!
+
+L 76  0100 1100
+a 97  0110 0001
+l 108 0110 1100
+o 111 0110 1111
+! 33  0010 0001
+
+
+// CODIFICAÇÃO BINÁRIA_IMAGEM_
+
+Imagens tbm sao codificadas. As imagens sao transformadas em uma matriz 
+bidimensional de numeros, onde a unidade básica é um pixel.
+
+/ PIXEL: Menor componente de uma imagem digital.
+/ BITMAP: Coleção de pixels de uma imagem. 
+
+O numero de pixels/ unidade de area, determina a resolução de uma imagem.
+O pixell é representado geralemnte pelo grau de participação de cada cor basica - azul
+verde e vermelho - na cor final da imagem colorida. Codificação RGB(Red, Green, Blue).
+
+/ A extensão bitmap é um outro formato mais direto de representação gráficas, pois 
+não sofre nenhum tipo de compactação. Por isso os arquivos, apesar de simples, costumam
+ser pesados/grandes.
+
+/Arquivo JPEG: Nesse formato apenas o que é relevante na imagem é usado pra um
+melhor aproveitamento do espaco disponivel p armazenamento, ou seja,
+sao imagens compactadas.
+
+/ Arquivo Gif: Limita o numero de cores a 256. cada imagem gif pode ser 
+composta por diferentes conjuntos de 256 cores.
+
+// CODIFICAÇÃO BINÁRIA_SOM_
+
+O primeiro passo nessa conversão é processar o som por um conversor analógico-digitall
+que transforma o sinal analogico original para o formato digital por meio do metodo PCM
+do ingles - Pulse Code Modulation. Ele tranforma o sinal de audio em uma sequencia 
+de valores discretos, convertidos para a representaçao binária.
+

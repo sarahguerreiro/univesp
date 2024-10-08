@@ -1,0 +1,31 @@
+// Propósito: Define tarefas automatizadas que o VSCode pode executar. No caso de um projeto C++, ele geralmente define como compilar e vincular o código-fonte para gerar o executável.
+// Implicações: Automatiza o processo de build. Toda vez que você compilar ou executar o código, o VSCode usará as tarefas definidas neste arquivo para gerar o executável,nomeDoArquivo.exe.
+
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe arquivo de build ativo",
+            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Tarefa gerada pelo Depurador."
+        }
+    ],
+    "version": "2.0.0"
+}
